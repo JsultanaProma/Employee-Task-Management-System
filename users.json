@@ -1,0 +1,154 @@
+[
+    {
+        "id": 1,
+        "username": "admin",
+        "email": "admin@example.com",
+        "password": "admin123",
+        "firstName": "Admin",
+        "lastName": "User",
+        "role": "admin",
+        "department": "management",
+        "status": "active",
+        "created_at": "2024-01-15 10:30:00",
+        "updated_at": "2024-04-24 08:45:12",
+        "last_login": "2024-04-24 08:45:12"
+    },
+    {
+        "id": 2,
+        "username": "hr_manager",
+        "email": "hr@example.com",
+        "password": "hr123",
+        "firstName": "Sarah",
+        "lastName": "Johnson",
+        "role": "hr",
+        "department": "hr",
+        "status": "active",
+        "created_at": "2024-01-20 09:15:22",
+        "updated_at": "2025-04-27 13:23:49",
+        "last_login": "2025-04-27 13:23:49"
+    },
+    {
+        "id": 3,
+        "username": "john_dev",
+        "email": "john.dev@example.com",
+        "password": "john123",
+        "firstName": "John",
+        "lastName": "Smith",
+        "role": "employee",
+        "department": "engineering",
+        "status": "active",
+        "created_at": "2024-02-05 11:30:45",
+        "updated_at": "2024-04-23 09:12:18",
+        "last_login": "2024-04-23 09:12:18"
+    },
+    {
+        "id": 4,
+        "username": "lisa_design",
+        "email": "lisa.design@example.com",
+        "password": "lisa123",
+        "firstName": "Lisa",
+        "lastName": "Chen",
+        "role": "employee",
+        "department": "design",
+        "status": "active",
+        "created_at": "2024-02-15 13:45:30",
+        "updated_at": "2025-04-29 12:25:05",
+        "last_login": "2025-04-29 12:25:05"
+    },
+    {
+        "id": 5,
+        "username": "mark_marketing",
+        "email": "mark.m@example.com",
+        "password": "mark123",
+        "firstName": "Mark",
+        "lastName": "Thompson",
+        "role": "employee",
+        "department": "marketing",
+        "status": "active",
+        "created_at": "2024-02-28 10:15:45",
+        "updated_at": "2025-04-29 11:08:32",
+        "last_login": "2025-04-29 11:08:32"
+    },
+    {
+        "id": 6,
+        "username": "emily_hr",
+        "email": "emily.hr@example.com",
+        "password": "emily123",
+        "firstName": "Emily",
+        "lastName": "Davis",
+        "role": "hr",
+        "department": "hr",
+        "status": "active",
+        "created_at": "2024-03-10 09:20:15",
+        "updated_at": "2025-04-29 12:30:00",
+        "last_login": "2025-04-29 12:30:00"
+    },
+    {
+        "id": 7,
+        "username": "michael_dev",
+        "email": "michael.dev@example.com",
+        "password": "michael123",
+        "firstName": "Michael",
+        "lastName": "Brown",
+        "role": "employee",
+        "department": "engineering",
+        "status": "inactive",
+        "created_at": "2024-01-25 08:45:30",
+        "updated_at": "2024-03-15 16:30:22",
+        "last_login": "2024-03-15 16:30:22"
+    },
+    {
+        "id": 8,
+        "username": "david_wilson",
+        "email": "david.admin@example.com",
+        "password": "david123",
+        "firstName": "David",
+        "lastName": "Wilson",
+        "role": "admin",
+        "department": "management",
+        "status": "active",
+        "created_at": "2024-02-10 11:20:30",
+        "updated_at": "2025-04-29 09:47:24",
+        "last_login": "2024-04-23 10:15:40"
+    },
+    {
+        "id": 9,
+        "username": "asdasd_asdsd",
+        "email": "rds@gmail.com",
+        "password": "david123",
+        "firstName": "asdasd",
+        "lastName": "asdsd",
+        "role": "admin",
+        "department": "engineering",
+        "status": "active",
+        "created_at": "2025-04-29 09:54:51",
+        "updated_at": "2025-04-29 09:55:05",
+        "last_login": null,
+        "permissions": {
+            "tasks": {
+                "view": true,
+                "create": true,
+                "edit": true,
+                "delete": false
+            },
+            "users": {
+                "view": true,
+                "create": false,
+                "edit": false,
+                "delete": false
+            },
+            "reports": {
+                "view": true,
+                "create": false,
+                "edit": false,
+                "delete": false
+            },
+            "settings": {
+                "view": false,
+                "create": false,
+                "edit": false,
+                "delete": false
+            }
+        }
+    }
+]

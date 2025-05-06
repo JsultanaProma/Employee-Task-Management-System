@@ -1,0 +1,74 @@
+{
+    "projects": [
+        {
+            "id": "proj1",
+            "name": "Website Redesign",
+            "description": "Complete overhaul of the company website with modern design and improved user experience",
+            "status": "In Progress",
+            "start_date": "2024-03-01",
+            "end_date": "2024-06-30",
+            "budget": 50000,
+            "department_id": "dept1",
+            "manager_id": "user1",
+            "team_members": ["user2", "user3", "user4"],
+            "progress": 45,
+            "priority": "high"
+        },
+        {
+            "id": "proj2",
+            "name": "Mobile App Development",
+            "description": "Development of a new mobile application for customer engagement",
+            "status": "Planning",
+            "start_date": "2024-04-15",
+            "end_date": "2024-09-30",
+            "budget": 75000,
+            "department_id": "dept2",
+            "manager_id": "user2",
+            "team_members": ["user5", "user6", "user7"],
+            "progress": 15,
+            "priority": "medium"
+        },
+        {
+            "id": "proj3",
+            "name": "Marketing Campaign",
+            "description": "Q2 marketing campaign focusing on social media and email marketing",
+            "status": "Active",
+            "start_date": "2024-04-01",
+            "end_date": "2024-06-30",
+            "budget": 30000,
+            "department_id": "dept3",
+            "manager_id": "user3",
+            "team_members": ["user8", "user9"],
+            "progress": 30,
+            "priority": "high"
+        },
+        {
+            "id": "proj5",
+            "name": "Marketing Campaign",
+            "description": "Q2 marketing campaign focusing on social media and email marketing",
+            "status": "Active",
+            "start_date": "2024-04-01",
+            "end_date": "2024-06-30",
+            "budget": 30000,
+            "department_id": "dept3",
+            "manager_id": "user3",
+            "team_members": ["user8", "user9"],
+            "progress": 30,
+            "priority": "high"
+        },
+        {
+            "id": "proj4",
+            "name": "HR Training Program",
+            "description": "Development and implementation of new employee training program",
+            "status": "Completed",
+            "start_date": "2024-01-01",
+            "end_date": "2024-03-31",
+            "budget": 25000,
+            "department_id": "dept4",
+            "manager_id": "user4",
+            "team_members": ["user10", "user11"],
+            "progress": 100,
+            "priority": "medium"
+        }
+    ]
+} 

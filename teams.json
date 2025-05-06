@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Development Team",
+        "department": "engineering",
+        "description": "Responsible for building and maintaining the core application features",
+        "status": "active",
+        "lead": {
+            "id": 3,
+            "name": "John Smith"
+        },
+        "members": [3, 7, 9, 12, 15, 18, 22],
+        "metrics": {
+            "tasks": 24,
+            "completed": 18,
+            "onTime": 75,
+            "efficiency": 82
+        },
+        "created_at": "2023-11-15 09:30:00",
+        "updated_at": "2024-04-10 14:22:30"
+    },
+    {
+        "id": 2,
+        "name": "Marketing Team",
+        "department": "marketing",
+        "description": "Handles all marketing campaigns and social media presence",
+        "status": "active",
+        "lead": {
+            "id": 5,
+            "name": "Mark Thompson"
+        },
+        "members": [5, 14, 16, 20, 23],
+        "metrics": {
+            "tasks": 18,
+            "completed": 15,
+            "onTime": 92,
+            "efficiency": 88
+        },
+        "created_at": "2023-12-05 10:15:22",
+        "updated_at": "2024-04-15 11:30:40"
+    },
+    {
+        "id": 3,
+        "name": "Design Team",
+        "department": "design",
+        "description": "Creates all visual elements and ensures great user experience",
+        "status": "active",
+        "lead": {
+            "id": 4,
+            "name": "Lisa Chen"
+        },
+        "members": [4, 10, 17, 21],
+        "metrics": {
+            "tasks": 22,
+            "completed": 20,
+            "onTime": 95,
+            "efficiency": 90
+        },
+        "created_at": "2024-01-10 08:45:15",
+        "updated_at": "2024-04-12 16:20:10"
+    },
+    {
+        "id": 4,
+        "name": "QA Team",
+        "department": "engineering",
+        "description": "Ensures quality and stability of all software releases",
+        "status": "active",
+        "lead": {
+            "id": 8,
+            "name": "David Wilson"
+        },
+        "members": [8, 11, 13, 19],
+        "metrics": {
+            "tasks": 30,
+            "completed": 28,
+            "onTime": 86,
+            "efficiency": 85
+        },
+        "created_at": "2023-10-20 11:20:40",
+        "updated_at": "2024-04-18 09:15:30"
+    },
+    {
+        "id": 5,
+        "name": "HR Team",
+        "department": "hr",
+        "description": "Manages all HR operations and employee relations",
+        "status": "active",
+        "lead": {
+            "id": 2,
+            "name": "Sarah Johnson"
+        },
+        "members": [2, 6],
+        "metrics": {
+            "tasks": 15,
+            "completed": 13,
+            "onTime": 90,
+            "efficiency": 87
+        },
+        "created_at": "2023-11-01 09:00:00",
+        "updated_at": "2024-04-14 13:45:20"
+    },
+    {
+        "id": 6,
+        "name": "Operations Team",
+        "department": "operations",
+        "description": "Handles day-to-day operations and logistics",
+        "status": "inactive",
+        "lead": {
+            "id": 7,
+            "name": "Michael Brown"
+        },
+        "members": [7, 24, 25],
+        "metrics": {
+            "tasks": 12,
+            "completed": 8,
+            "onTime": 65,
+            "efficiency": 70
+        },
+        "created_at": "2023-12-15 14:30:00",
+        "updated_at": "2024-03-01 10:20:30"
+    }
+]

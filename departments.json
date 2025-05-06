@@ -1,0 +1,49 @@
+{
+    "departments": [
+        {
+            "id": "dept1",
+            "name": "Design",
+            "description": "Responsible for UI\/UX design and creative assets",
+            "head": "John Smith",
+            "employee_count": 12,
+            "budget": 150000,
+            "created_at": "2023-01-01T00:00:00Z"
+        },
+        {
+            "id": "dept2",
+            "name": "Development",
+            "description": "Software development and technical implementation",
+            "head": "Sarah Johnson",
+            "employee_count": 25,
+            "budget": 300000,
+            "created_at": "2023-01-01T00:00:00Z"
+        },
+        {
+            "id": "dept3",
+            "name": "Marketing",
+            "description": "Marketing strategy and campaign management",
+            "head": "Michael Brown",
+            "employee_count": 8,
+            "budget": 100000,
+            "created_at": "2023-01-01T00:00:00Z"
+        },
+        {
+            "id": "dept4",
+            "name": "Human Resources",
+            "description": "Employee management and recruitment",
+            "head": "Emily Davis",
+            "employee_count": 5,
+            "budget": 80000,
+            "created_at": "2023-01-01T00:00:00Z"
+        },
+        {
+            "name": "dasd",
+            "description": "dsad",
+            "head": "323",
+            "budget": 0.03,
+            "employee_count": 4,
+            "created_at": "2025-04-29T10:23:48+00:00",
+            "id": "dept50174d"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "audit_logs": [
+        {
+            "id": "log1",
+            "action": "User Login",
+            "user_email": "admin@example.com",
+            "timestamp": "2025-04-28T10:42:00Z",
+            "type": "login"
+        },
+        {
+            "id": "log2",
+            "action": "Created New Task",
+            "user_email": "hr@example.com",
+            "timestamp": "2025-04-28T09:15:00Z",
+            "type": "create"
+        },
+        {
+            "id": "log3",
+            "action": "Updated User Permissions",
+            "user_email": "admin@example.com",
+            "timestamp": "2025-04-27T16:22:00Z",
+            "type": "update"
+        },
+        {
+            "id": "log4",
+            "action": "Deleted Task",
+            "user_email": "manager@example.com",
+            "timestamp": "2025-04-27T14:10:00Z",
+            "type": "delete"
+        }
+    ]
+}

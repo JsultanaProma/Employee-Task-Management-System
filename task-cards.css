@@ -1,0 +1,297 @@
+/* Task Cards Styling */
+.user-tasks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.task-card {
+    background-color: var(--bg-secondary);
+    border-radius: var(--card-border-radius, 1rem);
+    box-shadow: var(--box-shadow-subtle, 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.05));
+    border: 1px solid rgba(226, 232, 240, 0.5);
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.task-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--primary-gradient, linear-gradient(135deg, var(--accent-color), #3b82f6));
+    border-radius: 4px 0 0 4px;
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-elevated, 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05));
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.5);
+}
+
+.task-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+}
+
+.task-priority {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.35rem 0.75rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.priority-high {
+    background-color: rgba(229, 62, 62, 0.1);
+    color: #e53e3e;
+}
+
+.priority-medium {
+    background-color: rgba(236, 201, 75, 0.1);
+    color: #d69e2e;
+}
+
+.priority-low {
+    background-color: rgba(72, 187, 120, 0.1);
+    color: #38a169;
+}
+
+.task-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.task-meta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.task-due-date, .task-assignee {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.meta-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.meta-value {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.meta-value svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.status-badge {
+    padding: 0.35rem 0.75rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.status-badge::before {
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: currentColor;
+}
+
+.status-completed {
+    background-color: rgba(72, 187, 120, 0.1);
+    color: #38a169;
+}
+
+.status-in-progress {
+    background-color: rgba(66, 153, 225, 0.1);
+    color: #3182ce;
+}
+
+.status-pending {
+    background-color: rgba(237, 137, 54, 0.1);
+    color: #dd6b20;
+}
+
+.task-card.status-completed::before {
+    background: linear-gradient(to bottom, #38a169, #2f855a);
+}
+
+.task-card.status-in-progress::before {
+    background: linear-gradient(to bottom, #3182ce, #2b6cb0);
+}
+
+.task-card.status-pending::before {
+    background: linear-gradient(to bottom, #dd6b20, #c05621);
+}
+
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    background-color: var(--bg-primary);
+    border-radius: var(--card-border-radius, 1rem);
+    color: var(--text-muted);
+    border: 1px dashed rgba(226, 232, 240, 0.7);
+    margin-top: 1rem;
+}
+
+.empty-state svg {
+    width: 64px;
+    height: 64px;
+    fill: currentColor;
+    margin-bottom: 1.5rem;
+    opacity: 0.5;
+}
+
+/* Task Card Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.user-tasks-container .task-card {
+    animation: fadeInUp 0.4s ease-out both;
+}
+
+.user-tasks-container .task-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.user-tasks-container .task-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.user-tasks-container .task-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.user-tasks-container .task-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+/* Progress Bar */
+.task-progress {
+    margin-top: 1rem;
+}
+
+.progress-container {
+    width: 100%;
+    height: 0.5rem;
+    background-color: var(--bg-primary);
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 1rem;
+    background: linear-gradient(to right, var(--accent-color), var(--accent-hover));
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .user-tasks-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Task section styling */
+.my-tasks-section {
+    background-color: var(--bg-secondary);
+    border-radius: var(--card-border-radius, 1rem);
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: var(--box-shadow-subtle, 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.05));
+    border: 1px solid rgba(226, 232, 240, 0.5);
+}
+
+.my-tasks-section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.my-tasks-section h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 24px;
+    background: var(--primary-gradient, linear-gradient(135deg, var(--accent-color), #3b82f6));
+    border-radius: 4px;
+}
+
+.my-tasks-section h2 svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--accent-color);
+}
